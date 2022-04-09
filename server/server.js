@@ -10,9 +10,8 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res,) => {
     res.send('Hello from the web server side')
-    next()
 })
 
 
